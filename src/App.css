@@ -1,0 +1,289 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-color: #0d1117;
+    --surface-color: #161b22;
+    --surface-hover: #21262d;
+    --primary-color: #58a6ff;
+    --primary-hover: #79c0ff;
+    --accent-color: #8957e5;
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --border-color: #30363d;
+    --glass-bg: rgba(22, 27, 34, 0.7);
+    --glass-border: rgba(240, 246, 252, 0.1);
+    --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* Global Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Utility Classes */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(13, 17, 23, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--text-primary) !important;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-secondary) !important;
+    transition: var(--transition);
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2b6cb0, #1a202c);
+    /* Darker blue to dark gray gradient */
+    color: #ffffff;
+    /* White text for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+    border: 1px solid #2d3748;
+    /* Slight border definition */
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+    /* Pressed effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-hover), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+    color: white;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Book Cards */
+.book-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+    height: 100%;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+    background: var(--surface-hover);
+}
+
+.book-card img {
+    transition: transform 0.6s ease;
+}
+
+.book-card:hover img {
+    transform: scale(1.05);
+}
+
+.book-card .card-title {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.book-card .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+/* Buttons inside cards */
+.btn-premium {
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    padding: 0.7rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: auto;
+    transition: var(--transition);
+}
+
+.btn-premium:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(88, 166, 255, 0.4);
+}
+
+/* Featured Collections Header */
+.category-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    border-radius: 2px;
+}
+
+/* Inputs */
+.form-control {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    background-color: var(--surface-hover);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+    color: var(--text-primary);
+}
+
+/* Contact Page Enhancements */
+.contact-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(88, 166, 255, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--surface-hover);
+}
