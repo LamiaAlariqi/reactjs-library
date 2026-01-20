@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Rating = ({ maxStars = 5, initialRating = 0, onRate, color = "#ffc107" }) => {
+const Rating = ({ maxStars = 5, initialRating = 0, onRate, color  }) => {
     const [rating, setRating] = useState(initialRating);
     const [hover, setHover] = useState(0);
 

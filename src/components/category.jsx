@@ -2,7 +2,7 @@ import React from 'react'
 import Rating from './Rating'
 
 const Category = ({ book }) => {
-  
+
     return (
         <div className="col">
             <div className="book-card h-100 d-flex flex-column">
@@ -20,7 +20,7 @@ const Category = ({ book }) => {
                     <h6 className="card-subtitle mb-3 text-secondary">{book.author}</h6>
 
                     <div className="d-flex justify-content-center w-100">
-                        <Rating maxStars={5} />
+                        <Rating maxStars={5} color={"#ffc107"} />
                     </div>
 
                     {

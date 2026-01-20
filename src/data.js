@@ -18,6 +18,7 @@ export const sliders = [
 export const books = [
     {
         id: 1,
+        rating: 5,
         title: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
         image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -25,6 +26,7 @@ export const books = [
     },
     {
         id: 2,
+        rating: 4,
         title: "To Kill a Mockingbird",
         author: "Harper Lee",
         image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -32,6 +34,7 @@ export const books = [
     },
     {
         id: 3,
+        rating: 5,
         title: "1984",
         author: "George Orwell",
         image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -39,6 +42,7 @@ export const books = [
     },
     {
         id: 4,
+        rating: 4,
         title: "Pride and Prejudice",
         author: "Jane Austen",
         image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -46,6 +50,7 @@ export const books = [
     },
     {
         id: 5,
+        rating: 3,
         title: "Moby-Dick",
         author: "Herman Melville",
         image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -53,6 +58,7 @@ export const books = [
     },
     {
         id: 6,
+        rating: 5,
         title: "The Catcher in the Rye",
         author: "J.D. Salinger",
         image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=800&h=1200",
@@ -67,24 +73,28 @@ export const bookCategories = [
         books: [
             {
                 id: 101,
+                rating: 5,
                 title: "The Great Gatsby",
                 author: "F. Scott Fitzgerald",
                 image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 102,
+                rating: 4,
                 title: "To Kill a Mockingbird",
                 author: "Harper Lee",
                 image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 103,
+                rating: 5,
                 title: "1984",
                 author: "George Orwell",
                 image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 104,
+                rating: 3,
                 title: "The Catcher in the Rye",
                 author: "J.D. Salinger",
                 image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=800&h=1200"
@@ -141,14 +151,14 @@ export const bookCategories = [
                 id: 303,
                 title: "Ender's Game",
                 author: "Orson Scott Card",
-                 price :'40$',
+                price: '40$',
                 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 304,
                 title: "The Martian",
                 author: "Andy Weir",
-                 price :'40$',
+                price: '40$',
                 image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&q=80&w=800&h=1200"
             }
         ]
@@ -161,7 +171,7 @@ export const bookCategories = [
                 id: 401,
                 title: "Harry Potter",
                 author: "J.K. Rowling",
-                price :'40$',
+                price: '40$',
                 image: "https://images.unsplash.com/photo-1610882648335-ced8fc8fa6b6?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
@@ -174,7 +184,7 @@ export const bookCategories = [
                 id: 403,
                 title: "A Game of Thrones",
                 author: "George R.R. Martin",
-                price :'100$',
+                price: '100$',
                 image: "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
