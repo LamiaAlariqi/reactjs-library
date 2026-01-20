@@ -1,7 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useSearchParams } from "react-router-dom";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const TakeEmail = (e) => {
+    // setEmail(e.target.value);
+    console.log(e.target.email)
+  }
+
+  function TakePassword(e) {
+    // setPassword(e.target.value);
+    console.log(e.target.password);
+  }
+
+  const submitform = (e) => {
+    console.log(email, password);
+
+  }
   return (
     <div className="container-fluid min-vh-100 d-flex align-items-center justify-content-center py-5">
       <div className="row justify-content-center w-100">
@@ -23,6 +40,8 @@ const Login = () => {
                   className="form-control"
                   id="email"
                   placeholder="name@example.com"
+                  value={email}
+                  onChange={TakeEmail}
                 />
               </div>
 
@@ -40,6 +59,8 @@ const Login = () => {
                   className="form-control"
                   id="password"
                   placeholder="••••••••"
+                  value={password}
+                  onChange={TakePassword}
                 />
               </div>
 
@@ -50,7 +71,7 @@ const Login = () => {
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow mb-4">
+              <button type="submit" className="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow mb-4" onClick={submitform}>
                 Sign In
               </button>
 
@@ -77,3 +98,42 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+
+/*import React, { useState } from 'react'
+
+const Signup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("")
+
+  const TakeEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const submitForm = () => {
+    console.log(email,password);
+    
+  }
+  return (
+    <div>
+      <div className="container">
+        <div className="form text-center">
+        <form action="">
+          <label htmlFor="">Enter Your Email</label> <br />
+          <input type="email" placeholder='Enter your email' value={email} onChange={TakeEmail}/> <br />
+          <label htmlFor="">Enter Your Password</label> <br />
+          <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+        </form>
+        <button className='btn btn-warning' onClick={submitForm}>Signup</button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Signup
+
+
+// onChange event */

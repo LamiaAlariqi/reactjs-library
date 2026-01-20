@@ -141,12 +141,14 @@ export const bookCategories = [
                 id: 303,
                 title: "Ender's Game",
                 author: "Orson Scott Card",
+                 price :'40$',
                 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 304,
                 title: "The Martian",
                 author: "Andy Weir",
+                 price :'40$',
                 image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&q=80&w=800&h=1200"
             }
         ]
@@ -159,6 +161,7 @@ export const bookCategories = [
                 id: 401,
                 title: "Harry Potter",
                 author: "J.K. Rowling",
+                price :'40$',
                 image: "https://images.unsplash.com/photo-1610882648335-ced8fc8fa6b6?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
@@ -171,12 +174,14 @@ export const bookCategories = [
                 id: 403,
                 title: "A Game of Thrones",
                 author: "George R.R. Martin",
+                price :'100$',
                 image: "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&fit=crop&q=80&w=800&h=1200"
             },
             {
                 id: 404,
                 title: "The Name of the Wind",
                 author: "Patrick Rothfuss",
+
                 image: "https://images.unsplash.com/photo-1518373714866-3f1478910cc0?auto=format&fit=crop&q=80&w=800&h=1200"
             }
         ]

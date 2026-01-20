@@ -1,4 +1,4 @@
-/* App.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -242,7 +242,7 @@ p {
     color: var(--text-primary);
 }
 
-/* Contact Page Enhancements */
+/* Contact Page */
 .contact-card {
     background: var(--surface-color);
     border: 1px solid var(--border-color);

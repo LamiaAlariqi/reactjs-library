@@ -1,5 +1,6 @@
 import React from 'react';
 import { sliders, books } from '../data';
+import Rating from './Rating';
 
 const Home = () => {
   return (
@@ -90,6 +91,7 @@ const Home = () => {
                 <div className="card-body p-4 d-flex flex-column flex-grow-1">
                   <h5 className="card-title fw-bold mb-1">{book.title}</h5>
                   <h6 className="card-subtitle mb-3 text-muted">{book.author}</h6>
+                  <Rating initialRating={book.rating || 4} color="#fcd34d" />
                   <p className="card-text small opacity-75 mb-4 line-clamp-3">{book.desc}</p>
                   <button className="btn btn-premium w-100 mt-auto">View Details</button>
                 </div>
