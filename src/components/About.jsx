@@ -7,7 +7,7 @@ const About = () => {
             <div className="text-center mb-5" style={{ paddingTop: '100px' }}>
                 <h1 className="fw-bold mb-3 display-6"><span className="text-gradient" >About Us</span></h1>
                 <p className="lead text-secondary mx-auto" style={{ maxWidth: '600px' }}>
-                    We are dedicated to preserving knowledge and fostering a community of lifelong learners. Meet the team behind the library.
+                    We are dedicated to celebrating cinema and fostering a community of movie lovers. Meet the team behind the platform.
                 </p>
             </div>
 
@@ -35,16 +35,16 @@ const About = () => {
                     <div className="col-lg-6">
                         <h2 className="fw-bold mb-3">Our <span className="text-gradient">Mission</span></h2>
                         <p className="mb-4 text-secondary">
-                            To provide universal access to the world's knowledge and to create a welcoming space for everyone to explore, discover, and create.
+                            To provide universal access to the world's best movies and to create a welcoming space for everyone to explore, discover, and enjoy cinema.
                         </p>
                         <p className="text-light opacity-75">
-                            We believe that libraries are the heart of a community. They are places where people can come together to learn, share ideas, and grow. Whether you are looking for a quiet place to study, a new book to read, or a community event to attend, we have something for everyone. Come visit us and see what we have to offer!
+                            We believe that movies are the window to the world. They are stories where people can come together to learn, share emotions, and grow. Whether you are looking for a weekend blockbuster, an indie gem, or a community event, we have something for everyone. Join us and see what we have to offer!
                         </p>
                     </div>
                     <div className="col-lg-6 mt-4 mt-lg-0">
                         <img
-                            src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800&h=500"
-                            alt="Library Interior"
+                            src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800&h=500"
+                            alt="Cinema Interior"
                             className="img-fluid rounded-3 shadow-lg"
                         />
                     </div>

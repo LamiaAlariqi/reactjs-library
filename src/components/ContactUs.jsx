@@ -59,7 +59,7 @@ const ContactUs = () => {
                                 </div>
                                 <div>
                                     <strong className="d-block text-white">Address</strong>
-                                    <span className="text-secondary">123 Library Street, Booktown, BK 12345</span>
+                                    <span className="text-secondary">123 Cinema Street, Hollywood, HW 90210</span>
                                 </div>
                             </li>
                             <li className="mb-4 d-flex align-items-center">
@@ -68,7 +68,7 @@ const ContactUs = () => {
                                 </div>
                                 <div>
                                     <strong className="d-block text-white">Email</strong>
-                                    <span className="text-secondary">contact@library.com</span>
+                                    <span className="text-secondary">contact@moviedb.com</span>
                                 </div>
                             </li>
                             <li className="mb-4 d-flex align-items-center">
@@ -88,15 +88,15 @@ const ContactUs = () => {
                             <h5 className="card-title mb-3">Business Hours</h5>
                             <div className="d-flex justify-content-between mb-2 text-secondary">
                                 <span>Mon - Fri:</span>
-                                <span>9:00 AM - 8:00 PM</span>
+                                <span>9:00 AM - 10:00 PM</span>
                             </div>
                             <div className="d-flex justify-content-between mb-2 text-secondary">
                                 <span>Saturday:</span>
-                                <span>10:00 AM - 6:00 PM</span>
+                                <span>10:00 AM - 11:00 PM</span>
                             </div>
                             <div className="d-flex justify-content-between text-secondary">
                                 <span>Sunday:</span>
-                                <span>Closed</span>
+                                <span>10:00 AM - 9:00 PM</span>
                             </div>
                         </div>
 

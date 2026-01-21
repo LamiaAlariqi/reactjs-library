@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          <span className="text-gradient">Library</span>
+          <span className="text-gradient">MovieDB</span>
         </NavLink>
         <button
           className="navbar-toggler"
@@ -26,7 +26,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/books">Books</NavLink>
+              <NavLink className="nav-link" to="/movies">Movies</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">About Us</NavLink>

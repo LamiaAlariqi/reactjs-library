@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Signup = () => {
+  const [firstname,setFirstname]=useState("");
+  const [lastname,setLastname]=useState("");
+  const [email,setEmail]=useState("");
+  const [password,setPassword]=useState("");
+  const [confirmPassword,setConfirmPassword]=useState("");
+  const [show, setshow]=useState(false);
+
+  const showvalues=()=>{
+    setshow(true);
+  }
+  const submitform = (e) => {
+    e.preventDefault();
+    console.log(email,password,firstname,lastname);
+  }
   return (
     <div className="container-fluid min-vh-100 d-flex align-items-center justify-content-center py-5">
       <div className="row justify-content-center w-100">
@@ -13,14 +27,16 @@ const Signup = () => {
           </div>
 
           <div className="glass-panel p-4 p-md-5 rounded-4">
-            <form>
+            <form onSubmit={submitform}> 
               <div className="row">
                 <div className="col-md-6 mb-4">
-                  <label className="form-label text-light fw-medium small">First Name</label>
+                  <label className="form-label text-light fw-medium small" >First Name</label>
                   <input
                     type="text"
                     className="form-control"
                     placeholder="John"
+                    value={firstname}
+                    onChange={(e) => setFirstname(e.target.value)}
                   />
                 </div>
                 <div className="col-md-6 mb-4">
@@ -29,6 +45,8 @@ const Signup = () => {
                     type="text"
                     className="form-control"
                     placeholder="Doe"
+                    value={lastname}
+                    onChange={(e) => setLastname(e.target.value)}
                   />
                 </div>
               </div>
@@ -39,6 +57,8 @@ const Signup = () => {
                   type="email"
                   className="form-control"
                   placeholder="name@example.com"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                 />
               </div>
 
@@ -48,6 +68,8 @@ const Signup = () => {
                   type="password"
                   className="form-control"
                   placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <div className="form-text text-secondary opacity-75" style={{ fontSize: '0.75rem' }}>
                   Must be at least 8 characters long.
@@ -60,6 +82,8 @@ const Signup = () => {
                   type="password"
                   className="form-control"
                   placeholder="••••••••"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
 
@@ -70,7 +94,9 @@ const Signup = () => {
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow-sm mb-4">
+              <button type="submit" className="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow-sm mb-4"
+              onClick={showvalues}
+              >
                 Create My Account
               </button>
 
@@ -83,6 +109,14 @@ const Signup = () => {
                 </p>
               </div>
             </form>
+            {show?(
+<>
+<p>first name: {firstname}</p>
+<p>last name: {lastname}</p>
+<p>email: {email}</p>
+<p>password: {password}</p>
+
+</>            ):null}
           </div>
 
           <div className="mt-5 d-flex justify-content-center gap-4 opacity-50">
